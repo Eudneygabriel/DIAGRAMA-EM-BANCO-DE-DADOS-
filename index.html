@@ -4,94 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abrir PDF</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="conteudo-esquerda">
-      <h1>PRINCIPAIS REQUISITOS</h1>
-
-      <ul>
-        <li>
-          <strong>Biblioteca </strong>Fornecer acesso à informação, através de
-          livros, periódicos, jornais, materiais audiovisuais e digitais
-        </li>
-        <li>
-          <strong>Livros</strong>transmitir Conhecimento, Contar uma História,
-          Educar e Informar, Entreter e etc.
-        </li>
-        <li>
-          <strong>Secretaria</strong> atendimento ao Cliente, gestão de Agenda,
-          manutenção do Ambiente processamento de Pedidos e etc.
-        </li>
-        <li>
-          <strong>Acesso a internet</strong> o sistema requer acesso à internet
-        </li>
-        <li><strong>Site</strong> o sistema precisa de um site de consulta</li>
-      </ul>
-      <h2>FUNCIONALIDADES DO CRUD</h2>
-
-      <ul>
-        <li>
-          <strong>CRIAR:</strong> Criar novos registros ou dados no banco de
-          dados.
-        </li>
-        <li>
-          <strong>LER:</strong>Ler ou recuperar dados existentes do banco de
-          dados.
-        </li>
-        <li>
-          <strong>ATUALIZAR:</strong> Atualizar ou modificar dados existentes no
-          banco de dados.
-        </li>
-        <li>
-          <strong>EXCLUIR:</strong> Excluir registros ou dados do banco de
-          dados.
-        </li>
-      </ul>
-    </div>
-
-    <div id="conteudo-direita">
-      <h1>MAIN REQUIREMENTS</h1>
-      <ul>
-        <li>
-          <strong>Library</strong>Provide access to information, through books,
-          periodicals, newspapers, audiovisual and digital materials
-        </li>
-        <li>
-          <strong>Book</strong>transmit Knowledge, Tell a Story, Educate and
-          Inform, Entertain, etc.
-        </li>
-        <li>
-          <strong>Secretary</strong>Customer service, Agenda management,
-          maintenance of the Order Processing Environment, etc.
-        </li>
-        <li>
-          <strong>Internet access</strong>the system requires internet access
-        </li>
-        <li><strong>site</strong>the system needs a query site</li>
-      </ul>
-      <h2>CRUD FEATURES</h2>
-      <ul>
-        <li>
-          <strong>TO CREATE:</strong> Create new records or data in the
-          database.
-        </li>
-        <li>
-          <strong>LER</strong>Read or retrieve existing data from the database.
-        </li>
-        <li>
-          <strong>TO UPDATE:</strong>Update or modify existing data in the
-          database.
-        </li>
-        <li>
-          <strong>DELETE:</strong> Excluir registros ou dados do banco de dados.
-        </li>
-      </ul>
-    </div>
+    <h1>PRICIPAIS REQISITOS DO MEU SISTEMA BIBILIOTECA</h1>
+    <ul>
+      <li>
+        <strong>Cadastro de Livros</strong> Adicionar informações detalhadas
+        sobre os livros, como título, autor, editora, ISBN, número de páginas.
+      </li>
+      <li>
+        <strong>Cadastro de Leitores</strong> Permitir o registro de informações
+        sobre os leitores, como nome, endereço, e-mail, telefone.
+      </li>
+      <li>
+        <strong>Controle de Empréstimos</strong> Registrar empréstimos de livros
+        para os leitores, associando as datas de retirada e devolução.
+      </li>
+      <li>
+        <strong>Consulta de Livros</strong> Oferecer uma interface de busca
+        eficiente para que os usuários possam encontrar livros facilmente.
+      </li>
+      <li>
+        <strong>Notificações por E-mail</strong> Enviar lembretes de datas de
+        devolução, confirmações de reservas, etc., por e-mail
+      </li>
+      <li>
+        <strong>Integração com Site</strong> Disponibilizar um site amigável
+        para os leitores acessarem o catálogo, realizarem pesquisas e
+        gerenciarem suas contas.
+      </li>
+      <li>
+        <strong>Integração com Computadores</strong> Desenvolver uma versão de
+        desktop do sistema para ser usada localmente na biblioteca, se
+        necessário.
+      </li>
+      <li>
+        <strong>Acesso pela Internet</strong> Certificar-se de que o sistema
+        seja acessível pela internet para facilitar o gerenciamento remoto.
+      </li>
+    </ul>
+    <p></p>
+    <h2>Implementação do CRUD no Sistema</h2>
+    <ul>
+      <li>
+        <strong>Create (Criar)</strong> Cadastro de Livros: Adicionar novos
+        livros ao sistema, incluindo informações como título, autor, número de
+        cópias disponíveis.
+      </li>
+      <li>
+        <strong>Read (Ler)</strong> Consulta de Livros: Permitir que os usuários
+        busquem e vejam informações sobre livros disponíveis na biblioteca.
+      </li>
+      <li>
+        <strong>Update (Atualizar)</strong> Atualização de Dados do Livro:
+        Modificar informações de livros existentes, como quantidade disponível
+        ou detalhes do autor
+      </li>
+      <li>
+        <strong>Delete (Excluir)</strong> Remoção de Livros Obsoletos: Excluir
+        registros de livros que não estão mais disponíveis na biblioteca.
+      </li>
+    </ul>
+    <h3>RELAÇAO ENTRE LIVRO USUARIO E EMPRESTIMO</h3>
+    <li>
+      <strong>Livro</strong> Representa as informações específicas de um livro,
+      como título, autor, número de cópias disponíveis.
+    </li>
+    <li>
+      <strong>Usuário</strong> Representa um usuário do sistema, como um membro
+      da biblioteca.
+    </li>
+    <li>
+      <strong>Empréstimo</strong> Representa a transação de empréstimo de um
+      livro para um usuário em específico.
+    </li>
 
     <a href="Diagrama em branco-1.pdf" target="_blank">Abrir Documento 1</a>
-    <a href="Diagrama em branco.pdf" target="_blank">Abrir Documento 2</a>
+    <a href="Diagrama em branco-2.pdf" target="_blank">Abrir Documento 2</a>
 
     <script src="script.js"></script>
   </body>

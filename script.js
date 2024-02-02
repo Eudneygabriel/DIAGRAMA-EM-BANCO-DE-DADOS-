@@ -4,9 +4,10 @@ function abrirPDF(nomeDocumento) {
   pdfjsLib.getDocument(urlPDF).promise.then(function (pdfDoc) {
     const pageNum = 1;
 
-    const canvasContainer = document.createElement("div");
-    canvasContainer.className = "canvas-container";
-    document.body.appendChild(canvasContainer);
+    // Criar um novo elemento div para o PDF
+    const pdfContainer = document.createElement("div");
+    pdfContainer.className = "pdf-container";
+    document.body.appendChild(pdfContainer);
 
     pdfDoc.getPage(pageNum).then(function (page) {
       const viewport = page.getViewport({ scale: 1.5 });
@@ -14,7 +15,7 @@ function abrirPDF(nomeDocumento) {
       const context = canvas.getContext("2d");
       canvas.height = viewport.height;
       canvas.width = viewport.width;
-      canvasContainer.appendChild(canvas);
+      pdfContainer.appendChild(canvas);
 
       page.render({ canvasContext: context, viewport: viewport });
     });
